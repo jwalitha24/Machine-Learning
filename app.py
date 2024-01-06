@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import streamlit as st
 
-dataset=pd.read_csv('Crop.csv')
+dataset=pd.read_csv('crop.csv')
 x=dataset.iloc[:,:-1].values
 y=dataset.iloc[:,-1].values
 
