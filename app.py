@@ -8,7 +8,7 @@ dataset=pd.read_csv('Crop.csv')
 x=dataset.iloc[:,:-1].values
 y=dataset.iloc[:,-1].values
 
-x_train,x-test,y_train,y_test=train_test_split(x,y,test_size=0.2)
+x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
 
 classifier=LogisticRegression()
 classifier.fit(x_train,y_train)
